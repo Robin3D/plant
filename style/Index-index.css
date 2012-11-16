@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+.welcome{
+	/*box-shadow:7px 4px 6px gray;
+	padding:4px;
+	*/
+	font-family:微软雅黑;
+	font-size:30px;
+	font-weight:bold;
+	color:#663399;
+	text-shadow:5px 5px 6px #999999;
+}
+.welcome-head{
+	margin:0px auto;
+	width:500px;
+}
