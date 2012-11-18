@@ -1,4 +1,8 @@
 @CHARSET "UTF-8";
+.welcome-head{
+	text-align:center;
+	disabled:true;
+}
 .welcome{
 	/*box-shadow:7px 4px 6px gray;
 	padding:4px;
@@ -8,8 +12,28 @@
 	font-weight:bold;
 	color:#663399;
 	text-shadow:5px 5px 6px #999999;
+	display:block;
 }
 .welcome-head{
 	margin:0px auto;
 	width:500px;
+}
+.mouse_div{
+	display:none;
+}
+.notice{
+	font-family:微软雅黑;
+	font-size:14px;
+	color:#663399;
+	display:block;
+}
+.close{
+	position:absolute;
+	top:10px;
+	left:70px;
+	width:20px;
+	height:20px;
+	border-radius:10px;
+	background-color:#ffcc66;
+	box-shadow:0px 0px 8px #000;
 }
