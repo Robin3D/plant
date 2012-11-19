@@ -9,6 +9,12 @@ $(document).ready(function() {
 	var mouse_y = 0;
 	// 是否在div中的标志
 	var flag = 0;
+	
+	//禁止选择文本
+	$(document).bind("selectstart",function(){
+		return false;
+	});  
+	
 	// 生成div
 	$(document).dblclick(function(e) {
 		if (flag == 0) {
@@ -42,9 +48,11 @@ $(document).ready(function() {
 				'background-color' : 'rgb(' + r + ',' + g + ',' + b + ')',
 				'box-shadow' : '0px 0px 8px #000',
 				'border-radius' : '8px',
-				'z-index' : r
+				'z-index' : r,
+				'cursor' : 'move'
 			});
 		} else {
+			flag = 0;
 			return false;
 		}
 	});
