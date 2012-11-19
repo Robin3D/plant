@@ -1,4 +1,15 @@
 @CHARSET "UTF-8";
+body{
+	background-color:#CCCCCC;
+}
+.background{
+	background-color:#669999;
+	width:900px;
+	height:1000px;
+	margin:0px auto;
+	box-shadow:0px 0px 15px #000;
+	border-radius:20px;
+}
 .welcome-head{
 	text-align:center;
 }
@@ -9,30 +20,21 @@
 	font-family:微软雅黑;
 	font-size:30px;
 	font-weight:bold;
-	color:#663399;
-	text-shadow:5px 5px 6px #999999;
-	display:block;
+	color:#CC9900;
+	text-shadow:5px 5px 6px #666666;
+	position:absolute;
+	left:230px;
+	top:70px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
 }
 .welcome-head{
 	margin:0px auto;
 	width:500px;
-}
-.mouse_div{
-	display:none;
 }
 .notice{
 	font-family:微软雅黑;
 	font-size:14px;
 	color:#663399;
 	display:block;
-}
-.close{
-	position:absolute;
-	top:10px;
-	left:70px;
-	width:20px;
-	height:20px;
-	border-radius:10px;
-	background-color:#ffcc66;
-	box-shadow:0px 0px 8px #000;
 }
