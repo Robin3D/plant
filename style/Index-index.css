@@ -38,3 +38,64 @@ body{
 	color:#663399;
 	display:block;
 }
+/***************聊天弹窗*********************/
+.show_out{
+	width:300px;
+	height:400px;
+	position:fixed;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	box-shadow:0px 0px 15px #000;
+}
+.head{
+	width:300px;
+	height:30px;
+	background-color:#99CCFF;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.history{
+	width:294px;
+	height:190px;
+	background-color:#660033;
+	border-color:#99CCFF;
+	border-style:solid;
+	overflow-y:auto;
+}
+.content{
+	width:290px;
+	height:50px;
+	border-right:3px solid #99CCFF;
+	border-left:3px solid #99CCFF;
+	border-bottom:3px solid #99CCFF;
+	border-top:none;
+	resize:none;
+	outline:none;
+}
+.button{
+	width:300px;
+	height:100px;
+	background-color:#99CCFF;
+}
+input{
+	float:right;
+	margin-right:20px;
+}
+/********************聊天内容*********************/
+.title{
+	color:#009900;
+	font-size:8px;
+}
+.contents{
+	color:#99CCCC;
+	font-size:8px;
+}
+p{
+	margin:6px 0px;
+}
+/********************聊天按钮**********************/
+.input{
+	font-size:14px;
+	background-color:#3399cc;
+	border-radius:5px;
+}

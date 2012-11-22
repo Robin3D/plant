@@ -9,12 +9,12 @@ $(document).ready(function() {
 	var mouse_y = 0;
 	// 是否在div中的标志
 	var flag = 0;
-	
-	//禁止选择文本
-	$(document).bind("selectstart",function(){
+
+	// 禁止选择文本
+	$(document).bind("selectstart", function() {
 		return false;
-	});  
-	
+	});
+
 	// 生成div
 	$(document).dblclick(function(e) {
 		if (flag == 0) {
@@ -95,4 +95,43 @@ $(document).ready(function() {
 			'top' : y + 'px'
 		});
 	});
+	
+	//初始获取浏览器高宽
+	var window_height = $(window).height();
+	var window_width = $(window).width();
+	//初始聊天窗口位置
+	var hide_height = window_height - 33;
+	var show_height = window_height - 320;
+	var chat_width = window_width - 330;
+	$('.show_out').css({
+		'left':chat_width+'px',
+		'top':hide_height+'px'
+	});
+
+	// 聊天弹窗
+	var chat_flag = 0;
+	$('.head').click(function() {
+		if (chat_flag == 0) {
+			$('.show_out').animate( {
+				top : show_height+'px'
+			}, 500);
+			//计算滚动偏移高度，自动滚到底部
+			var offset_top = 0;
+			$('p').each(function(){
+				offset_top += $(this).height()+6;
+			});
+			$('.history').scrollTop(offset_top);
+			chat_flag = 1;
+		} else {
+			$('.show_out').animate( {
+				top : hide_height+'px'
+			}, 500);
+			chat_flag = 0;
+		}
+	});
+	
+	/*alert($(window).height());
+	alert($(document).height());
+	alert($(window).width());
+	alert($(document).width());*/
 });
